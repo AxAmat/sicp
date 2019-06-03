@@ -2,6 +2,8 @@
 
 ;;; Нахождение неподвижных точек функций
 
+(require "common.rkt")
+
 (define (fixed-point f first-guess)
   (define (try guess)
     (let ([next (f guess)])
